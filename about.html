@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- for customization: h1 - title, h2 - blog post, div id=timestamp - timestamp, p - post -->
+
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="http://code.jquery.com/jquery-1.5.js"></script>
+		
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	
+	<!-- Header
+	.............................. -->
+	
+	<header id="header">
+			
+			<div id="title">
+				<h1>Super Simple Blog Engine</h1>
+			</div>
+
+			<nav id="nav">
+				<ul>
+					<li><a href="http://ruiposse.com/ssbe">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="download.html">DOWNLOAD</a></li>
+					<li><a class="last" href="contact.html">CONTACT</a></li>
+				</ul>
+			</nav>
+					
+	</header>
+	
+	<!-- Content
+	.............................. -->
+	
+	<section id="content">
+	
+	<img id="pic" src="img/posse_net.png">
+	<p>Hello, my name is <a href="http://ruiposse.com">Rui Posse</a>.</p>
+	<p>I'm a web developer, working as a freelancer. In the past years i've done apps for the web, web design and cloud consulting. I help enterprises migrate to the cloud, from the very first decision, through web development, to the computer assembly.</p>
+	<br>
+	<p>Welcome to <a href="/ssbe">Super Simple Blog Engine</a>.</p>
+	<p>Super Simple Blog Engine is an open-source project, that gives you the power to create your own blog in just 6 steps, simple as that.</p>
+	<p>I was tired of all the clutter in other engines, so i decided i should create my own. This site is, obviously, running SSBE, so feel free to check the source and <a href="/ssbe/download.html">download</a> SSBE.
+	<hr>
+	
+	<h3>Instructions</h3>
+	<ul>
+		<li>1. Download the latest version, <a href="/ssbe/donwloads/ssbe-011.zip">here</a></li>
+		<li>2. Extract the contents to the host (using ftp or other)</li>
+		<li>3. Create the SQL tables needed for SSBE using "tables.sql" (using PHPMyAdmin or equal)</li>
+		<li>4. Edit "sql.php" with the created username, password and database name</li>
+		<li>5. Choose the php file where you want to show your posts</li>
+		<li>6. Insert &lt;?php include("engine.php"); ?&gt; in that file</li>
+		<li>7. Insert &lt;?php posts(); ?&gt; in that file where you want to show your post list</li>
+		<li>8. http://myblog.com/admin.php to manage your new blog</li>
+		<li>9. Start posting!</li>
+	</ul>
+	<br>
+	<br>If you want, you can read the <a href="ssbe/downloads/user_guide.pdf">full documentation</a>.
+	<hr>
+	
+	</section>
+	
+	<!-- Footer
+	.............................. -->
+	<footer id="footer">
+		<p align="center">Rui Posse &copy; 2011 | Powered by <a href="http://ruiposse.com/ssbe/">Super Simple Blog Engine</a></p>
+	</footer>
+
+</body>
+
+</html>
